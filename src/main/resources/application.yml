@@ -1,0 +1,78 @@
+server:
+  port: 8080
+
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:exercise-5;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE # In Memory Database- exercise-5
+    driver-class-name: org.h2.Driver
+    username: akash
+    password: akash
+  h2:
+    console:
+      enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+
+
+  profiles:
+    active: dev
+
+
+
+## Logging Configuration
+#logging:
+#  level:
+#    root: info
+#  file:
+#    name: logs/application.log
+#    append: true
+#    max-size: 1MB
+#  rollingPolicy:
+#    fileNamePattern: logs/application-%d{yyyy-MM-dd}.log
+#
+#  pattern:
+#    console: "%d{dd-MM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+#    file: "%d{dd-MM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+
+
+default:
+  message: "Currently Active Profile is Default"
+
+
+#    rolling-policy:
+#      rolling-file-name: logs/application-%d{yyyyMMdd-HHmmss}.log
+
+
+# Logging Levels :
+#TRACE - Detailed Info of Application Behaviour
+#DEBUG - Debugging Info
+#INFO - Information Messages about application state
+#WARN - Warning Messages
+#ERROR - Error Messages
+#FATAL - Critical Error that cause application to crash
+
+# TRACE > DEBUG > INFO > WARN > ERROR > FATAL
+
+
+
+
+## We can write a all profiles in same application.yml ("---" separated each)
+#
+#---
+#
+#spring:
+#  profiles: dev
+#
+#server:
+#  port: 7000
+#
+#---
+#
+#spring:
+#  profiles: prod
+#
+#server:
+#  port: 7001
+

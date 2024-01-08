@@ -1,0 +1,11 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:exercise-5-test
+
+
+
+default:
+  message: "Currently Active Profile is Test"

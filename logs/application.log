@@ -1,0 +1,908 @@
+02-01-2024 09:30:10.764 [main] INFO  c.w.jpa.webjpa.Excercise5Application - Starting Excercise5Application using Java 1.8.0_202 on 18Y2WG3 with PID 20296 (C:\Users\akashc1\Java Projects\Exercise-5\target\classes started by akashc1 in C:\Users\akashc1\Java Projects\Exercise-5)
+02-01-2024 09:30:10.774 [main] INFO  c.w.jpa.webjpa.Excercise5Application - The following 1 profile is active: "dev"
+02-01-2024 09:30:10.833 [main] WARN  o.s.b.c.config.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 66:13]
+02-01-2024 09:30:10.833 [main] WARN  o.s.b.c.config.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 58:13]
+02-01-2024 09:30:11.692 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02-01-2024 09:30:11.768 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interfaces.
+02-01-2024 09:30:12.292 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @11328ms to org.eclipse.jetty.util.log.Slf4jLog
+02-01-2024 09:30:12.665 [main] INFO  o.s.b.w.e.j.JettyServletWebServerFactory - Server initialized with port: 8081
+02-01-2024 09:30:12.667 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.45.v20220203; built: 2022-02-03T09:14:34.105Z; git: 4a0c91c0be53805e3fcffdcdcc9587d5301863db; jvm 1.8.0_202-b08
+02-01-2024 09:30:12.702 [main] INFO  o.e.j.s.h.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+02-01-2024 09:30:12.702 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1868 ms
+02-01-2024 09:30:12.744 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+02-01-2024 09:30:13.023 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+02-01-2024 09:30:13.035 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:exercise-5-dev'
+02-01-2024 09:30:13.193 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+02-01-2024 09:30:13.193 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+02-01-2024 09:30:13.194 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+02-01-2024 09:30:13.203 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@8a2a6a{application,/,[file:///C:/Users/akashc1/AppData/Local/Temp/jetty-docbase.8081.3244879263579779993/],AVAILABLE}
+02-01-2024 09:30:13.204 [main] INFO  org.eclipse.jetty.server.Server - Started @12242ms
+02-01-2024 09:30:13.462 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+02-01-2024 09:30:13.548 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.5.Final
+02-01-2024 09:30:13.863 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+02-01-2024 09:30:14.019 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+02-01-2024 09:30:14.695 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+02-01-2024 09:30:14.704 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+02-01-2024 09:30:15.073 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02-01-2024 09:30:15.559 [main] INFO  o.e.j.s.h.ContextHandler.application - Initializing Spring DispatcherServlet 'dispatcherServlet'
+02-01-2024 09:30:15.560 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+02-01-2024 09:30:15.562 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+02-01-2024 09:30:15.597 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@2e140e59{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+02-01-2024 09:30:15.598 [main] INFO  o.s.b.w.e.jetty.JettyWebServer - Jetty started on port(s) 8081 (http/1.1) with context path '/'
+02-01-2024 09:30:15.610 [main] INFO  c.w.jpa.webjpa.Excercise5Application - Started Excercise5Application in 13.906 seconds (JVM running for 14.648)
+02-01-2024 09:30:30.857 [SpringApplicationShutdownHook] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@2e140e59{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+02-01-2024 09:30:30.858 [SpringApplicationShutdownHook] INFO  org.eclipse.jetty.server.session - node0 Stopped scavenging
+02-01-2024 09:30:30.859 [SpringApplicationShutdownHook] INFO  o.e.j.s.h.ContextHandler.application - Destroying Spring FrameworkServlet 'dispatcherServlet'
+02-01-2024 09:30:30.860 [SpringApplicationShutdownHook] INFO  o.e.j.server.handler.ContextHandler - Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@8a2a6a{application,/,[file:///C:/Users/akashc1/AppData/Local/Temp/jetty-docbase.8081.3244879263579779993/],STOPPED}
+02-01-2024 09:30:30.863 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+02-01-2024 09:30:30.864 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+02-01-2024 09:30:30.871 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+02-01-2024 09:30:30.874 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+02-01-2024 09:31:03.495 [main] INFO  c.w.jpa.webjpa.Excercise5Application - Starting Excercise5Application using Java 1.8.0_202 on 18Y2WG3 with PID 15692 (C:\Users\akashc1\Java Projects\Exercise-5\target\classes started by akashc1 in C:\Users\akashc1\Java Projects\Exercise-5)
+02-01-2024 09:31:03.499 [main] INFO  c.w.jpa.webjpa.Excercise5Application - The following 1 profile is active: "dev"
+02-01-2024 09:31:03.555 [main] WARN  o.s.b.c.config.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 66:13]
+02-01-2024 09:31:03.555 [main] WARN  o.s.b.c.config.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 58:13]
+02-01-2024 09:31:04.162 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02-01-2024 09:31:04.224 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 1 JPA repository interfaces.
+02-01-2024 09:31:04.637 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @2319ms to org.eclipse.jetty.util.log.Slf4jLog
+02-01-2024 09:31:04.979 [main] INFO  o.s.b.w.e.j.JettyServletWebServerFactory - Server initialized with port: 1010
+02-01-2024 09:31:04.982 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.45.v20220203; built: 2022-02-03T09:14:34.105Z; git: 4a0c91c0be53805e3fcffdcdcc9587d5301863db; jvm 1.8.0_202-b08
+02-01-2024 09:31:05.021 [main] INFO  o.e.j.s.h.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+02-01-2024 09:31:05.021 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1462 ms
+02-01-2024 09:31:05.061 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+02-01-2024 09:31:05.247 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+02-01-2024 09:31:05.255 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:exercise-5-dev'
+02-01-2024 09:31:05.448 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+02-01-2024 09:31:05.448 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+02-01-2024 09:31:05.450 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+02-01-2024 09:31:05.462 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@e8e0dec{application,/,[file:///C:/Users/akashc1/AppData/Local/Temp/jetty-docbase.1010.3989482720940150561/],AVAILABLE}
+02-01-2024 09:31:05.463 [main] INFO  org.eclipse.jetty.server.Server - Started @3145ms
+02-01-2024 09:31:05.609 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+02-01-2024 09:31:05.668 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.5.Final
+02-01-2024 09:31:05.836 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+02-01-2024 09:31:05.964 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+02-01-2024 09:31:06.487 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+02-01-2024 09:31:06.495 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+02-01-2024 09:31:06.829 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02-01-2024 09:31:07.213 [main] INFO  o.e.j.s.h.ContextHandler.application - Initializing Spring DispatcherServlet 'dispatcherServlet'
+02-01-2024 09:31:07.213 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+02-01-2024 09:31:07.213 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+02-01-2024 09:31:07.237 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@7ec58feb{HTTP/1.1, (http/1.1)}{0.0.0.0:1010}
+02-01-2024 09:31:07.238 [main] INFO  o.s.b.w.e.jetty.JettyWebServer - Jetty started on port(s) 1010 (http/1.1) with context path '/'
+02-01-2024 09:31:07.249 [main] INFO  c.w.jpa.webjpa.Excercise5Application - Started Excercise5Application in 4.355 seconds (JVM running for 4.932)
+02-01-2024 09:33:01.956 [SpringApplicationShutdownHook] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@7ec58feb{HTTP/1.1, (http/1.1)}{0.0.0.0:1010}
+02-01-2024 09:33:01.957 [SpringApplicationShutdownHook] INFO  org.eclipse.jetty.server.session - node0 Stopped scavenging
+02-01-2024 09:33:01.959 [SpringApplicationShutdownHook] INFO  o.e.j.s.h.ContextHandler.application - Destroying Spring FrameworkServlet 'dispatcherServlet'
+02-01-2024 09:33:01.959 [SpringApplicationShutdownHook] INFO  o.e.j.server.handler.ContextHandler - Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@e8e0dec{application,/,[file:///C:/Users/akashc1/AppData/Local/Temp/jetty-docbase.1010.3989482720940150561/],STOPPED}
+02-01-2024 09:33:01.968 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+02-01-2024 09:33:01.968 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+02-01-2024 09:33:01.975 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+02-01-2024 09:33:01.981 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+02-01-2024 09:33:04.852 [main] INFO  c.w.jpa.webjpa.Excercise5Application - Starting Excercise5Application using Java 1.8.0_202 on 18Y2WG3 with PID 12152 (C:\Users\akashc1\Java Projects\Exercise-5\target\classes started by akashc1 in C:\Users\akashc1\Java Projects\Exercise-5)
+02-01-2024 09:33:04.856 [main] INFO  c.w.jpa.webjpa.Excercise5Application - The following 1 profile is active: "dev"
+02-01-2024 09:33:04.913 [main] WARN  o.s.b.c.config.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 70:13]
+02-01-2024 09:33:04.913 [main] WARN  o.s.b.c.config.ConfigDataEnvironment - Property 'spring.profiles' imported from location 'class path resource [application.yml]' is invalid and should be replaced with 'spring.config.activate.on-profile' [origin: class path resource [application.yml] - 62:13]
+02-01-2024 09:33:05.753 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02-01-2024 09:33:05.820 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interfaces.
+02-01-2024 09:33:06.268 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @2727ms to org.eclipse.jetty.util.log.Slf4jLog
+02-01-2024 09:33:06.642 [main] INFO  o.s.b.w.e.j.JettyServletWebServerFactory - Server initialized with port: 8081
+02-01-2024 09:33:06.644 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.45.v20220203; built: 2022-02-03T09:14:34.105Z; git: 4a0c91c0be53805e3fcffdcdcc9587d5301863db; jvm 1.8.0_202-b08
+02-01-2024 09:33:06.676 [main] INFO  o.e.j.s.h.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+02-01-2024 09:33:06.677 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1762 ms
+02-01-2024 09:33:06.714 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+02-01-2024 09:33:06.918 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+02-01-2024 09:33:06.927 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:exercise-5-dev'
+02-01-2024 09:33:07.103 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+02-01-2024 09:33:07.103 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+02-01-2024 09:33:07.104 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+02-01-2024 09:33:07.113 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@18acfe88{application,/,[file:///C:/Users/akashc1/AppData/Local/Temp/jetty-docbase.8081.8976186321750936145/],AVAILABLE}
+02-01-2024 09:33:07.113 [main] INFO  org.eclipse.jetty.server.Server - Started @3572ms
+02-01-2024 09:33:07.272 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+02-01-2024 09:33:07.327 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.5.Final
+02-01-2024 09:33:07.512 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+02-01-2024 09:33:07.653 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+02-01-2024 09:33:08.252 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+02-01-2024 09:33:08.266 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+02-01-2024 09:33:08.618 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02-01-2024 09:33:08.975 [main] INFO  o.e.j.s.h.ContextHandler.application - Initializing Spring DispatcherServlet 'dispatcherServlet'
+02-01-2024 09:33:08.975 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+02-01-2024 09:33:08.976 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+02-01-2024 09:33:08.996 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@4c03a37{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+02-01-2024 09:33:08.997 [main] INFO  o.s.b.w.e.jetty.JettyWebServer - Jetty started on port(s) 8081 (http/1.1) with context path '/'
+02-01-2024 09:33:09.009 [main] INFO  c.w.jpa.webjpa.Excercise5Application - Started Excercise5Application in 4.849 seconds (JVM running for 5.468)
+02-01-2024 09:33:30.988 [SpringApplicationShutdownHook] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@4c03a37{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+02-01-2024 09:33:30.989 [SpringApplicationShutdownHook] INFO  org.eclipse.jetty.server.session - node0 Stopped scavenging
+02-01-2024 09:33:30.991 [SpringApplicationShutdownHook] INFO  o.e.j.s.h.ContextHandler.application - Destroying Spring FrameworkServlet 'dispatcherServlet'
+02-01-2024 09:33:30.991 [SpringApplicationShutdownHook] INFO  o.e.j.server.handler.ContextHandler - Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@18acfe88{application,/,[file:///C:/Users/akashc1/AppData/Local/Temp/jetty-docbase.8081.8976186321750936145/],STOPPED}
+02-01-2024 09:33:31.013 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+02-01-2024 09:33:31.014 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+02-01-2024 09:33:31.020 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+02-01-2024 09:33:31.029 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+02-01-2024 09:36:49.126 [main] INFO  c.w.jpa.webjpa.Excercise5Application - Starting Excercise5Application using Java 1.8.0_202 on 18Y2WG3 with PID 13164 (C:\Users\akashc1\Java Projects\Exercise-5\target\classes started by akashc1 in C:\Users\akashc1\Java Projects\Exercise-5)
+02-01-2024 09:36:49.130 [main] INFO  c.w.jpa.webjpa.Excercise5Application - The following 1 profile is active: "dev"
+02-01-2024 09:36:50.025 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02-01-2024 09:36:50.113 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 73 ms. Found 1 JPA repository interfaces.
+02-01-2024 09:36:50.523 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @2641ms to org.eclipse.jetty.util.log.Slf4jLog
+02-01-2024 09:36:50.893 [main] INFO  o.s.b.w.e.j.JettyServletWebServerFactory - Server initialized with port: 8081
+02-01-2024 09:36:50.895 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.45.v20220203; built: 2022-02-03T09:14:34.105Z; git: 4a0c91c0be53805e3fcffdcdcc9587d5301863db; jvm 1.8.0_202-b08
+02-01-2024 09:36:50.921 [main] INFO  o.e.j.s.h.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+02-01-2024 09:36:50.922 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1728 ms
+02-01-2024 09:36:50.953 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+02-01-2024 09:36:51.113 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+02-01-2024 09:36:51.126 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:exercise-5-dev'
+02-01-2024 09:36:51.315 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+02-01-2024 09:36:51.315 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+02-01-2024 09:36:51.317 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+02-01-2024 09:36:51.326 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@29eda4f8{application,/,[file:///C:/Users/akashc1/AppData/Local/Temp/jetty-docbase.8081.2881100499126631941/],AVAILABLE}
+02-01-2024 09:36:51.327 [main] INFO  org.eclipse.jetty.server.Server - Started @3446ms
+02-01-2024 09:36:51.494 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+02-01-2024 09:36:51.574 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.5.Final
+02-01-2024 09:36:51.752 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+02-01-2024 09:36:51.876 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+02-01-2024 09:36:52.517 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+02-01-2024 09:36:52.526 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+02-01-2024 09:36:52.879 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02-01-2024 09:36:53.283 [main] INFO  o.e.j.s.h.ContextHandler.application - Initializing Spring DispatcherServlet 'dispatcherServlet'
+02-01-2024 09:36:53.283 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+02-01-2024 09:36:53.285 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+02-01-2024 09:36:53.314 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@260f2144{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+02-01-2024 09:36:53.316 [main] INFO  o.s.b.w.e.jetty.JettyWebServer - Jetty started on port(s) 8081 (http/1.1) with context path '/'
+02-01-2024 09:36:53.326 [main] INFO  c.w.jpa.webjpa.Excercise5Application - Started Excercise5Application in 4.798 seconds (JVM running for 5.446)
+02-01-2024 09:37:07.212 [SpringApplicationShutdownHook] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@260f2144{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+02-01-2024 09:37:07.213 [SpringApplicationShutdownHook] INFO  org.eclipse.jetty.server.session - node0 Stopped scavenging
+02-01-2024 09:37:07.214 [SpringApplicationShutdownHook] INFO  o.e.j.s.h.ContextHandler.application - Destroying Spring FrameworkServlet 'dispatcherServlet'
+02-01-2024 09:37:07.215 [SpringApplicationShutdownHook] INFO  o.e.j.server.handler.ContextHandler - Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@29eda4f8{application,/,[file:///C:/Users/akashc1/AppData/Local/Temp/jetty-docbase.8081.2881100499126631941/],STOPPED}
+02-01-2024 09:37:07.220 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+02-01-2024 09:37:07.221 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+02-01-2024 09:37:07.226 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+02-01-2024 09:37:07.230 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+02-01-2024 09:37:36.508 [main] INFO  c.w.jpa.webjpa.Excercise5Application - Starting Excercise5Application using Java 1.8.0_202 on 18Y2WG3 with PID 2724 (C:\Users\akashc1\Java Projects\Exercise-5\target\classes started by akashc1 in C:\Users\akashc1\Java Projects\Exercise-5)
+02-01-2024 09:37:36.512 [main] INFO  c.w.jpa.webjpa.Excercise5Application - No active profile set, falling back to 1 default profile: "default"
+02-01-2024 09:37:37.216 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02-01-2024 09:37:37.280 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interfaces.
+02-01-2024 09:37:37.737 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @2367ms to org.eclipse.jetty.util.log.Slf4jLog
+02-01-2024 09:37:38.111 [main] INFO  o.s.b.w.e.j.JettyServletWebServerFactory - Server initialized with port: 8080
+02-01-2024 09:37:38.115 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.45.v20220203; built: 2022-02-03T09:14:34.105Z; git: 4a0c91c0be53805e3fcffdcdcc9587d5301863db; jvm 1.8.0_202-b08
+02-01-2024 09:37:38.151 [main] INFO  o.e.j.s.h.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+02-01-2024 09:37:38.152 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1586 ms
+02-01-2024 09:37:38.187 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+02-01-2024 09:37:38.375 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+02-01-2024 09:37:38.394 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:exercise-5'
+02-01-2024 09:37:38.584 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+02-01-2024 09:37:38.585 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+02-01-2024 09:37:38.586 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+02-01-2024 09:37:38.601 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@7173ae5b{application,/,[file:///C:/Users/akashc1/AppData/Local/Temp/jetty-docbase.8080.3546850666054132344/],AVAILABLE}
+02-01-2024 09:37:38.602 [main] INFO  org.eclipse.jetty.server.Server - Started @3233ms
+02-01-2024 09:37:38.760 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+02-01-2024 09:37:38.821 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.5.Final
+02-01-2024 09:37:38.976 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+02-01-2024 09:37:39.093 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+02-01-2024 09:37:39.590 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+02-01-2024 09:37:39.596 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+02-01-2024 09:37:39.939 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02-01-2024 09:37:40.316 [main] INFO  o.e.j.s.h.ContextHandler.application - Initializing Spring DispatcherServlet 'dispatcherServlet'
+02-01-2024 09:37:40.317 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+02-01-2024 09:37:40.319 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+02-01-2024 09:37:40.348 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b6c624{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+02-01-2024 09:37:40.349 [main] INFO  o.s.b.w.e.jetty.JettyWebServer - Jetty started on port(s) 8080 (http/1.1) with context path '/'
+02-01-2024 09:37:40.361 [main] INFO  c.w.jpa.webjpa.Excercise5Application - Started Excercise5Application in 4.43 seconds (JVM running for 4.991)
+02-01-2024 09:38:15.560 [SpringApplicationShutdownHook] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@3b6c624{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+02-01-2024 09:38:15.561 [SpringApplicationShutdownHook] INFO  org.eclipse.jetty.server.session - node0 Stopped scavenging
+02-01-2024 09:38:15.563 [SpringApplicationShutdownHook] INFO  o.e.j.s.h.ContextHandler.application - Destroying Spring FrameworkServlet 'dispatcherServlet'
+02-01-2024 09:38:15.564 [SpringApplicationShutdownHook] INFO  o.e.j.server.handler.ContextHandler - Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@7173ae5b{application,/,[file:///C:/Users/akashc1/AppData/Local/Temp/jetty-docbase.8080.3546850666054132344/],STOPPED}
+02-01-2024 09:38:15.574 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+02-01-2024 09:38:15.574 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+02-01-2024 09:38:15.579 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+02-01-2024 09:38:15.585 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+02-01-2024 09:38:18.859 [main] INFO  c.w.jpa.webjpa.Excercise5Application - Starting Excercise5Application using Java 1.8.0_202 on 18Y2WG3 with PID 12196 (C:\Users\akashc1\Java Projects\Exercise-5\target\classes started by akashc1 in C:\Users\akashc1\Java Projects\Exercise-5)
+02-01-2024 09:38:18.862 [main] INFO  c.w.jpa.webjpa.Excercise5Application - The following 2 profiles are active: "test", "prod"
+02-01-2024 09:38:19.525 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02-01-2024 09:38:19.592 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interfaces.
+02-01-2024 09:38:20.062 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @2441ms to org.eclipse.jetty.util.log.Slf4jLog
+02-01-2024 09:38:20.381 [main] INFO  o.s.b.w.e.j.JettyServletWebServerFactory - Server initialized with port: 8083
+02-01-2024 09:38:20.383 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.45.v20220203; built: 2022-02-03T09:14:34.105Z; git: 4a0c91c0be53805e3fcffdcdcc9587d5301863db; jvm 1.8.0_202-b08
+02-01-2024 09:38:20.412 [main] INFO  o.e.j.s.h.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+02-01-2024 09:38:20.413 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1499 ms
+02-01-2024 09:38:20.455 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+02-01-2024 09:38:20.642 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+02-01-2024 09:38:20.650 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:exercise-5-prod'
+02-01-2024 09:38:20.812 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+02-01-2024 09:38:20.812 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+02-01-2024 09:38:20.813 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+02-01-2024 09:38:20.821 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@e8e0dec{application,/,[file:///C:/Users/akashc1/AppData/Local/Temp/jetty-docbase.8083.5495463730978450776/],AVAILABLE}
+02-01-2024 09:38:20.821 [main] INFO  org.eclipse.jetty.server.Server - Started @3201ms
+02-01-2024 09:38:21.035 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+02-01-2024 09:38:21.076 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.5.Final
+02-01-2024 09:38:21.227 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+02-01-2024 09:38:21.339 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+02-01-2024 09:38:21.860 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+02-01-2024 09:38:21.867 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+02-01-2024 09:38:22.192 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02-01-2024 09:38:22.568 [main] INFO  o.e.j.s.h.ContextHandler.application - Initializing Spring DispatcherServlet 'dispatcherServlet'
+02-01-2024 09:38:22.569 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+02-01-2024 09:38:22.570 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+02-01-2024 09:38:22.587 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@7e7f0f0a{HTTP/1.1, (http/1.1)}{0.0.0.0:8083}
+02-01-2024 09:38:22.589 [main] INFO  o.s.b.w.e.jetty.JettyWebServer - Jetty started on port(s) 8083 (http/1.1) with context path '/'
+02-01-2024 09:38:22.598 [main] INFO  c.w.jpa.webjpa.Excercise5Application - Started Excercise5Application in 4.376 seconds (JVM running for 4.978)
+02-01-2024 09:38:34.544 [SpringApplicationShutdownHook] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@7e7f0f0a{HTTP/1.1, (http/1.1)}{0.0.0.0:8083}
+02-01-2024 09:38:34.545 [SpringApplicationShutdownHook] INFO  org.eclipse.jetty.server.session - node0 Stopped scavenging
+02-01-2024 09:38:34.547 [SpringApplicationShutdownHook] INFO  o.e.j.s.h.ContextHandler.application - Destroying Spring FrameworkServlet 'dispatcherServlet'
+02-01-2024 09:38:34.548 [SpringApplicationShutdownHook] INFO  o.e.j.server.handler.ContextHandler - Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@e8e0dec{application,/,[file:///C:/Users/akashc1/AppData/Local/Temp/jetty-docbase.8083.5495463730978450776/],STOPPED}
+02-01-2024 09:38:34.559 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+02-01-2024 09:38:34.559 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+02-01-2024 09:38:34.564 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+02-01-2024 09:38:34.570 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+02-01-2024 09:38:37.277 [main] INFO  c.w.jpa.webjpa.Excercise5Application - Starting Excercise5Application using Java 1.8.0_202 on 18Y2WG3 with PID 1852 (C:\Users\akashc1\Java Projects\Exercise-5\target\classes started by akashc1 in C:\Users\akashc1\Java Projects\Exercise-5)
+02-01-2024 09:38:37.281 [main] INFO  c.w.jpa.webjpa.Excercise5Application - The following 1 profile is active: "test"
+02-01-2024 09:38:37.998 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02-01-2024 09:38:38.050 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+02-01-2024 09:38:38.455 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @2394ms to org.eclipse.jetty.util.log.Slf4jLog
+02-01-2024 09:38:38.787 [main] INFO  o.s.b.w.e.j.JettyServletWebServerFactory - Server initialized with port: 8082
+02-01-2024 09:38:38.790 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.45.v20220203; built: 2022-02-03T09:14:34.105Z; git: 4a0c91c0be53805e3fcffdcdcc9587d5301863db; jvm 1.8.0_202-b08
+02-01-2024 09:38:38.823 [main] INFO  o.e.j.s.h.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+02-01-2024 09:38:38.824 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1490 ms
+02-01-2024 09:38:38.861 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+02-01-2024 09:38:39.044 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+02-01-2024 09:38:39.052 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:exercise-5-test'
+02-01-2024 09:38:39.204 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+02-01-2024 09:38:39.205 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+02-01-2024 09:38:39.205 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+02-01-2024 09:38:39.212 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@79d9214d{application,/,[file:///C:/Users/akashc1/AppData/Local/Temp/jetty-docbase.8082.8642173373673974938/],AVAILABLE}
+02-01-2024 09:38:39.213 [main] INFO  org.eclipse.jetty.server.Server - Started @3153ms
+02-01-2024 09:38:39.375 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+02-01-2024 09:38:39.424 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.5.Final
+02-01-2024 09:38:39.566 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+02-01-2024 09:38:39.686 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+02-01-2024 09:38:40.247 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+02-01-2024 09:38:40.256 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+02-01-2024 09:38:40.581 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02-01-2024 09:38:40.931 [main] INFO  o.e.j.s.h.ContextHandler.application - Initializing Spring DispatcherServlet 'dispatcherServlet'
+02-01-2024 09:38:40.932 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+02-01-2024 09:38:40.935 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+02-01-2024 09:38:40.961 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3be4f71{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+02-01-2024 09:38:40.967 [main] INFO  o.s.b.w.e.jetty.JettyWebServer - Jetty started on port(s) 8082 (http/1.1) with context path '/'
+02-01-2024 09:38:40.981 [main] INFO  c.w.jpa.webjpa.Excercise5Application - Started Excercise5Application in 4.257 seconds (JVM running for 4.922)
+02-01-2024 09:38:52.037 [SpringApplicationShutdownHook] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@3be4f71{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+02-01-2024 09:38:52.038 [SpringApplicationShutdownHook] INFO  org.eclipse.jetty.server.session - node0 Stopped scavenging
+02-01-2024 09:38:52.040 [SpringApplicationShutdownHook] INFO  o.e.j.s.h.ContextHandler.application - Destroying Spring FrameworkServlet 'dispatcherServlet'
+02-01-2024 09:38:52.041 [SpringApplicationShutdownHook] INFO  o.e.j.server.handler.ContextHandler - Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@79d9214d{application,/,[file:///C:/Users/akashc1/AppData/Local/Temp/jetty-docbase.8082.8642173373673974938/],STOPPED}
+02-01-2024 09:38:52.047 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+02-01-2024 09:38:52.048 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+02-01-2024 09:38:52.054 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+02-01-2024 09:38:52.061 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+02-01-2024 11:39:35.175 [main] INFO  c.w.jpa.webjpa.Excercise5Application - Starting Excercise5Application using Java 1.8.0_202 on 18Y2WG3 with PID 19724 (C:\Users\akashc1\Java Projects\Exercise-5\target\classes started by akashc1 in C:\Users\akashc1\Java Projects\Exercise-5)
+02-01-2024 11:39:35.175 [main] INFO  c.w.jpa.webjpa.Excercise5Application - The following 1 profile is active: "test"
+02-01-2024 11:39:36.362 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02-01-2024 11:39:36.456 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 80 ms. Found 1 JPA repository interfaces.
+02-01-2024 11:39:36.980 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @3865ms to org.eclipse.jetty.util.log.Slf4jLog
+02-01-2024 11:39:37.426 [main] INFO  o.s.b.w.e.j.JettyServletWebServerFactory - Server initialized with port: 8082
+02-01-2024 11:39:37.426 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.45.v20220203; built: 2022-02-03T09:14:34.105Z; git: 4a0c91c0be53805e3fcffdcdcc9587d5301863db; jvm 1.8.0_202-b08
+02-01-2024 11:39:37.457 [main] INFO  o.e.j.s.h.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+02-01-2024 11:39:37.457 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2212 ms
+02-01-2024 11:39:37.488 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+02-01-2024 11:39:37.708 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+02-01-2024 11:39:37.724 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:exercise-5-test'
+02-01-2024 11:39:37.913 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+02-01-2024 11:39:37.913 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+02-01-2024 11:39:37.913 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+02-01-2024 11:39:37.929 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@396639b{application,/,[file:///C:/Users/akashc1/AppData/Local/Temp/jetty-docbase.8082.6294772032759175468/],AVAILABLE}
+02-01-2024 11:39:37.929 [main] INFO  org.eclipse.jetty.server.Server - Started @4813ms
+02-01-2024 11:39:38.164 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+02-01-2024 11:39:38.259 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.5.Final
+02-01-2024 11:39:38.611 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+02-01-2024 11:39:38.795 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+02-01-2024 11:39:39.591 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+02-01-2024 11:39:39.601 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+02-01-2024 11:39:40.167 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02-01-2024 11:39:40.732 [main] INFO  o.e.j.s.h.ContextHandler.application - Initializing Spring DispatcherServlet 'dispatcherServlet'
+02-01-2024 11:39:40.732 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+02-01-2024 11:39:40.732 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+02-01-2024 11:39:40.748 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@7ac9af2a{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+02-01-2024 11:39:40.764 [main] INFO  o.s.b.w.e.jetty.JettyWebServer - Jetty started on port(s) 8082 (http/1.1) with context path '/'
+02-01-2024 11:39:40.764 [main] INFO  c.w.jpa.webjpa.Excercise5Application - Started Excercise5Application in 6.495 seconds (JVM running for 7.655)
+02-01-2024 11:40:34.262 [SpringApplicationShutdownHook] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@7ac9af2a{HTTP/1.1, (http/1.1)}{0.0.0.0:8082}
+02-01-2024 11:40:34.263 [SpringApplicationShutdownHook] INFO  org.eclipse.jetty.server.session - node0 Stopped scavenging
+02-01-2024 11:40:34.268 [SpringApplicationShutdownHook] INFO  o.e.j.s.h.ContextHandler.application - Destroying Spring FrameworkServlet 'dispatcherServlet'
+02-01-2024 11:40:34.269 [SpringApplicationShutdownHook] INFO  o.e.j.server.handler.ContextHandler - Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@396639b{application,/,[file:///C:/Users/akashc1/AppData/Local/Temp/jetty-docbase.8082.6294772032759175468/],STOPPED}
+02-01-2024 11:40:34.272 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+02-01-2024 11:40:34.272 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+02-01-2024 11:40:34.287 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+02-01-2024 11:40:34.291 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+02-01-2024 11:40:37.167 [main] INFO  c.w.jpa.webjpa.Excercise5Application - Starting Excercise5Application using Java 1.8.0_202 on 18Y2WG3 with PID 12436 (C:\Users\akashc1\Java Projects\Exercise-5\target\classes started by akashc1 in C:\Users\akashc1\Java Projects\Exercise-5)
+02-01-2024 11:40:37.171 [main] INFO  c.w.jpa.webjpa.Excercise5Application - The following 1 profile is active: "default"
+02-01-2024 11:40:38.009 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02-01-2024 11:40:38.084 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 1 JPA repository interfaces.
+02-01-2024 11:40:38.515 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @2627ms to org.eclipse.jetty.util.log.Slf4jLog
+02-01-2024 11:40:38.895 [main] INFO  o.s.b.w.e.j.JettyServletWebServerFactory - Server initialized with port: 8080
+02-01-2024 11:40:38.898 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.45.v20220203; built: 2022-02-03T09:14:34.105Z; git: 4a0c91c0be53805e3fcffdcdcc9587d5301863db; jvm 1.8.0_202-b08
+02-01-2024 11:40:38.924 [main] INFO  o.e.j.s.h.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+02-01-2024 11:40:38.925 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1693 ms
+02-01-2024 11:40:38.956 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+02-01-2024 11:40:39.135 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+02-01-2024 11:40:39.146 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:exercise-5'
+02-01-2024 11:40:39.316 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+02-01-2024 11:40:39.316 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+02-01-2024 11:40:39.317 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+02-01-2024 11:40:39.326 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@84487f4{application,/,[file:///C:/Users/akashc1/AppData/Local/Temp/jetty-docbase.8080.6222675391357120339/],AVAILABLE}
+02-01-2024 11:40:39.326 [main] INFO  org.eclipse.jetty.server.Server - Started @3439ms
+02-01-2024 11:40:39.491 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+02-01-2024 11:40:39.542 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.5.Final
+02-01-2024 11:40:39.683 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+02-01-2024 11:40:39.799 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+02-01-2024 11:40:40.327 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+02-01-2024 11:40:40.335 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+02-01-2024 11:40:40.685 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02-01-2024 11:40:41.263 [main] INFO  o.e.j.s.h.ContextHandler.application - Initializing Spring DispatcherServlet 'dispatcherServlet'
+02-01-2024 11:40:41.263 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+02-01-2024 11:40:41.265 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+02-01-2024 11:40:41.288 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@320494b6{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+02-01-2024 11:40:41.290 [main] INFO  o.s.b.w.e.jetty.JettyWebServer - Jetty started on port(s) 8080 (http/1.1) with context path '/'
+02-01-2024 11:40:41.302 [main] INFO  c.w.jpa.webjpa.Excercise5Application - Started Excercise5Application in 4.79 seconds (JVM running for 5.414)
+02-01-2024 11:41:01.611 [SpringApplicationShutdownHook] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@320494b6{HTTP/1.1, (http/1.1)}{0.0.0.0:8080}
+02-01-2024 11:41:01.613 [SpringApplicationShutdownHook] INFO  org.eclipse.jetty.server.session - node0 Stopped scavenging
+02-01-2024 11:41:01.617 [SpringApplicationShutdownHook] INFO  o.e.j.s.h.ContextHandler.application - Destroying Spring FrameworkServlet 'dispatcherServlet'
+02-01-2024 11:41:01.620 [SpringApplicationShutdownHook] INFO  o.e.j.server.handler.ContextHandler - Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@84487f4{application,/,[file:///C:/Users/akashc1/AppData/Local/Temp/jetty-docbase.8080.6222675391357120339/],STOPPED}
+02-01-2024 11:41:01.634 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+02-01-2024 11:41:01.634 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+02-01-2024 11:41:01.648 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+02-01-2024 11:41:01.656 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+02-01-2024 11:41:15.067 [main] INFO  c.w.jpa.webjpa.Excercise5Application - Starting Excercise5Application using Java 1.8.0_202 on 18Y2WG3 with PID 13880 (C:\Users\akashc1\Java Projects\Exercise-5\target\classes started by akashc1 in C:\Users\akashc1\Java Projects\Exercise-5)
+02-01-2024 11:41:15.071 [main] INFO  c.w.jpa.webjpa.Excercise5Application - The following 1 profile is active: "dev"
+02-01-2024 11:41:15.928 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02-01-2024 11:41:15.994 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interfaces.
+02-01-2024 11:41:16.438 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @2732ms to org.eclipse.jetty.util.log.Slf4jLog
+02-01-2024 11:41:16.786 [main] INFO  o.s.b.w.e.j.JettyServletWebServerFactory - Server initialized with port: 8081
+02-01-2024 11:41:16.789 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.45.v20220203; built: 2022-02-03T09:14:34.105Z; git: 4a0c91c0be53805e3fcffdcdcc9587d5301863db; jvm 1.8.0_202-b08
+02-01-2024 11:41:16.818 [main] INFO  o.e.j.s.h.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+02-01-2024 11:41:16.819 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1675 ms
+02-01-2024 11:41:16.863 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+02-01-2024 11:41:17.063 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+02-01-2024 11:41:17.077 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:exercise-5-dev'
+02-01-2024 11:41:17.350 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+02-01-2024 11:41:17.350 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+02-01-2024 11:41:17.352 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+02-01-2024 11:41:17.362 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@3d5790ea{application,/,[file:///C:/Users/akashc1/AppData/Local/Temp/jetty-docbase.8081.8585429920336603186/],AVAILABLE}
+02-01-2024 11:41:17.363 [main] INFO  org.eclipse.jetty.server.Server - Started @3658ms
+02-01-2024 11:41:17.663 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+02-01-2024 11:41:17.806 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.5.Final
+02-01-2024 11:41:18.032 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+02-01-2024 11:41:18.202 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+02-01-2024 11:41:18.897 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+02-01-2024 11:41:18.906 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+02-01-2024 11:41:19.528 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02-01-2024 11:41:20.031 [main] INFO  o.e.j.s.h.ContextHandler.application - Initializing Spring DispatcherServlet 'dispatcherServlet'
+02-01-2024 11:41:20.031 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+02-01-2024 11:41:20.032 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+02-01-2024 11:41:20.051 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@5c645b43{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+02-01-2024 11:41:20.052 [main] INFO  o.s.b.w.e.jetty.JettyWebServer - Jetty started on port(s) 8081 (http/1.1) with context path '/'
+02-01-2024 11:41:20.062 [main] INFO  c.w.jpa.webjpa.Excercise5Application - Started Excercise5Application in 5.651 seconds (JVM running for 6.356)
+02-01-2024 11:41:41.382 [qtp405950359-31] INFO  c.w.j.w.controller.BookController - Get Request comes to the Controller : api/book
+02-01-2024 11:41:42.156 [qtp405950359-31] ERROR c.w.j.w.serviceimpl.BookServiceImpl - No Book Details Found : []
+02-01-2024 11:41:42.174 [qtp405950359-31] ERROR c.w.j.w.e.GlobalExceptionHandler - CustomException : CustomExceptionResponseDTO(status=404, message=No Book Details Found, url=http://localhost:8081/api/book)
+02-01-2024 11:41:48.310 [qtp405950359-17] INFO  c.w.j.w.controller.BookController - Post Request comes to the Controller : api/book - Body Book(id=null, bookId=101, bookName=Java Concepts)
+02-01-2024 11:41:48.370 [qtp405950359-17] WARN  org.eclipse.jetty.server.HttpChannel - /api/book
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: ids for this class must be manually assigned before calling save(): com.web.jpa.webjpa.entity.Book; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.web.jpa.webjpa.entity.Book
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:517)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1631)
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:230)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:137)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.orm.jpa.JpaSystemException: ids for this class must be manually assigned before calling save(): com.web.jpa.webjpa.entity.Book; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.web.jpa.webjpa.entity.Book
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:331)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy97.save(Unknown Source)
+	at com.web.jpa.webjpa.serviceimpl.BookServiceImpl.addNewBook(BookServiceImpl.java:33)
+	at com.web.jpa.webjpa.controller.BookController.addNewBook(BookController.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	... 51 common frames omitted
+Caused by: org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.web.jpa.webjpa.entity.Book
+	at org.hibernate.id.Assigned.generate(Assigned.java:33)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:115)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:760)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:746)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362)
+	at com.sun.proxy.$Proxy94.persist(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311)
+	at com.sun.proxy.$Proxy94.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:637)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:639)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 73 common frames omitted
+02-01-2024 11:42:35.946 [SpringApplicationShutdownHook] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@5c645b43{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+02-01-2024 11:42:35.947 [SpringApplicationShutdownHook] INFO  org.eclipse.jetty.server.session - node0 Stopped scavenging
+02-01-2024 11:42:35.950 [SpringApplicationShutdownHook] INFO  o.e.j.s.h.ContextHandler.application - Destroying Spring FrameworkServlet 'dispatcherServlet'
+02-01-2024 11:42:35.950 [SpringApplicationShutdownHook] INFO  o.e.j.server.handler.ContextHandler - Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@3d5790ea{application,/,[file:///C:/Users/akashc1/AppData/Local/Temp/jetty-docbase.8081.8585429920336603186/],STOPPED}
+02-01-2024 11:42:35.953 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+02-01-2024 11:42:35.954 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+02-01-2024 11:42:35.960 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+02-01-2024 11:42:35.967 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+02-01-2024 11:42:44.679 [main] INFO  c.w.jpa.webjpa.Excercise5Application - Starting Excercise5Application using Java 1.8.0_202 on 18Y2WG3 with PID 9048 (C:\Users\akashc1\Java Projects\Exercise-5\target\classes started by akashc1 in C:\Users\akashc1\Java Projects\Exercise-5)
+02-01-2024 11:42:44.683 [main] INFO  c.w.jpa.webjpa.Excercise5Application - The following 1 profile is active: "dev"
+02-01-2024 11:42:45.543 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02-01-2024 11:42:45.665 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 93 ms. Found 1 JPA repository interfaces.
+02-01-2024 11:42:46.124 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @2802ms to org.eclipse.jetty.util.log.Slf4jLog
+02-01-2024 11:42:46.527 [main] INFO  o.s.b.w.e.j.JettyServletWebServerFactory - Server initialized with port: 8081
+02-01-2024 11:42:46.530 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.45.v20220203; built: 2022-02-03T09:14:34.105Z; git: 4a0c91c0be53805e3fcffdcdcc9587d5301863db; jvm 1.8.0_202-b08
+02-01-2024 11:42:46.583 [main] INFO  o.e.j.s.h.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+02-01-2024 11:42:46.584 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1837 ms
+02-01-2024 11:42:46.624 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+02-01-2024 11:42:46.822 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+02-01-2024 11:42:46.831 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:exercise-5-dev'
+02-01-2024 11:42:47.015 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+02-01-2024 11:42:47.016 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+02-01-2024 11:42:47.017 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+02-01-2024 11:42:47.027 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@396639b{application,/,[file:///C:/Users/akashc1/AppData/Local/Temp/jetty-docbase.8081.2738522945515822541/],AVAILABLE}
+02-01-2024 11:42:47.027 [main] INFO  org.eclipse.jetty.server.Server - Started @3706ms
+02-01-2024 11:42:47.188 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+02-01-2024 11:42:47.259 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.5.Final
+02-01-2024 11:42:47.417 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+02-01-2024 11:42:47.551 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+02-01-2024 11:42:48.121 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+02-01-2024 11:42:48.129 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+02-01-2024 11:42:48.462 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02-01-2024 11:42:48.904 [main] INFO  o.e.j.s.h.ContextHandler.application - Initializing Spring DispatcherServlet 'dispatcherServlet'
+02-01-2024 11:42:48.905 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+02-01-2024 11:42:48.907 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+02-01-2024 11:42:48.934 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@7ac9af2a{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+02-01-2024 11:42:48.979 [main] INFO  o.s.b.w.e.jetty.JettyWebServer - Jetty started on port(s) 8081 (http/1.1) with context path '/'
+02-01-2024 11:42:48.993 [main] INFO  c.w.jpa.webjpa.Excercise5Application - Started Excercise5Application in 5.012 seconds (JVM running for 5.672)
+02-01-2024 11:42:54.794 [qtp646445398-31] INFO  c.w.j.w.controller.BookController - Post Request comes to the Controller : api/book - Body Book(id=null, bookId=101, bookName=Java Concepts)
+02-01-2024 11:42:54.943 [qtp646445398-31] WARN  org.eclipse.jetty.server.HttpChannel - /api/book
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.orm.jpa.JpaSystemException: ids for this class must be manually assigned before calling save(): com.web.jpa.webjpa.entity.Book; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.web.jpa.webjpa.entity.Book
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:517)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1631)
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:230)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.orm.jpa.JpaSystemException: ids for this class must be manually assigned before calling save(): com.web.jpa.webjpa.entity.Book; nested exception is org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.web.jpa.webjpa.entity.Book
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:331)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:233)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy97.save(Unknown Source)
+	at com.web.jpa.webjpa.serviceimpl.BookServiceImpl.addNewBook(BookServiceImpl.java:33)
+	at com.web.jpa.webjpa.controller.BookController.addNewBook(BookController.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	... 47 common frames omitted
+Caused by: org.hibernate.id.IdentifierGenerationException: ids for this class must be manually assigned before calling save(): com.web.jpa.webjpa.entity.Book
+	at org.hibernate.id.Assigned.generate(Assigned.java:33)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:115)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:185)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:128)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:55)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:760)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:746)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362)
+	at com.sun.proxy.$Proxy94.persist(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311)
+	at com.sun.proxy.$Proxy94.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:637)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:639)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 69 common frames omitted
+02-01-2024 11:43:07.390 [SpringApplicationShutdownHook] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@7ac9af2a{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+02-01-2024 11:43:07.390 [SpringApplicationShutdownHook] INFO  org.eclipse.jetty.server.session - node0 Stopped scavenging
+02-01-2024 11:43:07.393 [SpringApplicationShutdownHook] INFO  o.e.j.s.h.ContextHandler.application - Destroying Spring FrameworkServlet 'dispatcherServlet'
+02-01-2024 11:43:07.394 [SpringApplicationShutdownHook] INFO  o.e.j.server.handler.ContextHandler - Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@396639b{application,/,[file:///C:/Users/akashc1/AppData/Local/Temp/jetty-docbase.8081.2738522945515822541/],STOPPED}
+02-01-2024 11:43:07.399 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+02-01-2024 11:43:07.400 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+02-01-2024 11:43:07.409 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+02-01-2024 11:43:07.414 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+02-01-2024 11:43:13.843 [main] INFO  c.w.jpa.webjpa.Excercise5Application - Starting Excercise5Application using Java 1.8.0_202 on 18Y2WG3 with PID 16412 (C:\Users\akashc1\Java Projects\Exercise-5\target\classes started by akashc1 in C:\Users\akashc1\Java Projects\Exercise-5)
+02-01-2024 11:43:13.846 [main] INFO  c.w.jpa.webjpa.Excercise5Application - The following 1 profile is active: "dev"
+02-01-2024 11:43:14.634 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02-01-2024 11:43:14.701 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interfaces.
+02-01-2024 11:43:15.173 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @2724ms to org.eclipse.jetty.util.log.Slf4jLog
+02-01-2024 11:43:15.555 [main] INFO  o.s.b.w.e.j.JettyServletWebServerFactory - Server initialized with port: 8081
+02-01-2024 11:43:15.558 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.45.v20220203; built: 2022-02-03T09:14:34.105Z; git: 4a0c91c0be53805e3fcffdcdcc9587d5301863db; jvm 1.8.0_202-b08
+02-01-2024 11:43:15.591 [main] INFO  o.e.j.s.h.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+02-01-2024 11:43:15.592 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1676 ms
+02-01-2024 11:43:15.636 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+02-01-2024 11:43:15.839 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+02-01-2024 11:43:15.864 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:exercise-5-dev'
+02-01-2024 11:43:16.086 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+02-01-2024 11:43:16.086 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+02-01-2024 11:43:16.087 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+02-01-2024 11:43:16.096 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@3d5790ea{application,/,[file:///C:/Users/akashc1/AppData/Local/Temp/jetty-docbase.8081.7549699690051069937/],AVAILABLE}
+02-01-2024 11:43:16.096 [main] INFO  org.eclipse.jetty.server.Server - Started @3649ms
+02-01-2024 11:43:16.236 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+02-01-2024 11:43:16.291 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.5.Final
+02-01-2024 11:43:16.506 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+02-01-2024 11:43:16.637 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+02-01-2024 11:43:17.234 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+02-01-2024 11:43:17.242 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+02-01-2024 11:43:17.652 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02-01-2024 11:43:18.163 [main] INFO  o.e.j.s.h.ContextHandler.application - Initializing Spring DispatcherServlet 'dispatcherServlet'
+02-01-2024 11:43:18.164 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+02-01-2024 11:43:18.165 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+02-01-2024 11:43:18.193 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@5c645b43{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+02-01-2024 11:43:18.195 [main] INFO  o.s.b.w.e.jetty.JettyWebServer - Jetty started on port(s) 8081 (http/1.1) with context path '/'
+02-01-2024 11:43:18.208 [main] INFO  c.w.jpa.webjpa.Excercise5Application - Started Excercise5Application in 5.098 seconds (JVM running for 5.76)
+02-01-2024 11:43:19.661 [qtp405950359-32] INFO  c.w.j.w.controller.BookController - Post Request comes to the Controller : api/book - Body Book(id=null, bookId=101, bookName=Java Concepts)
+02-01-2024 11:43:19.736 [qtp405950359-32] INFO  c.w.j.w.serviceimpl.BookServiceImpl - New Book Added : Book(id=1, bookId=101, bookName=Java Concepts)
+02-01-2024 11:43:21.585 [qtp405950359-17] INFO  c.w.j.w.controller.BookController - Post Request comes to the Controller : api/book - Body Book(id=null, bookId=101, bookName=Java Concepts)
+02-01-2024 11:43:21.586 [qtp405950359-17] INFO  c.w.j.w.serviceimpl.BookServiceImpl - New Book Added : Book(id=2, bookId=101, bookName=Java Concepts)
+02-01-2024 11:43:22.697 [qtp405950359-23] INFO  c.w.j.w.controller.BookController - Post Request comes to the Controller : api/book - Body Book(id=null, bookId=101, bookName=Java Concepts)
+02-01-2024 11:43:22.700 [qtp405950359-23] INFO  c.w.j.w.serviceimpl.BookServiceImpl - New Book Added : Book(id=3, bookId=101, bookName=Java Concepts)
+02-01-2024 11:43:23.471 [qtp405950359-18] INFO  c.w.j.w.controller.BookController - Post Request comes to the Controller : api/book - Body Book(id=null, bookId=101, bookName=Java Concepts)
+02-01-2024 11:43:23.472 [qtp405950359-18] INFO  c.w.j.w.serviceimpl.BookServiceImpl - New Book Added : Book(id=4, bookId=101, bookName=Java Concepts)
+02-01-2024 11:43:28.400 [qtp405950359-23] INFO  c.w.j.w.controller.BookController - Get Request comes to the Controller : api/book
+02-01-2024 11:43:28.792 [qtp405950359-23] INFO  c.w.j.w.serviceimpl.BookServiceImpl - All Books: [Book(id=1, bookId=101, bookName=Java Concepts), Book(id=2, bookId=101, bookName=Java Concepts), Book(id=3, bookId=101, bookName=Java Concepts), Book(id=4, bookId=101, bookName=Java Concepts)]
+02-01-2024 11:43:38.591 [qtp405950359-18] INFO  c.w.j.w.controller.BookController - Delete Request comes to controller : api/book/1
+02-01-2024 11:43:38.685 [qtp405950359-18] WARN  org.eclipse.jetty.server.HttpChannel - /api/book/1
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.dao.InvalidDataAccessApiUsageException: Parameter value [1] did not match expected type [java.lang.String (n/a)]; nested exception is java.lang.IllegalArgumentException: Parameter value [1] did not match expected type [java.lang.String (n/a)]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:931)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:523)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:799)
+	at org.eclipse.jetty.servlet.ServletHandler$ChainEnd.doFilter(ServletHandler.java:1631)
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:230)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.dao.InvalidDataAccessApiUsageException: Parameter value [1] did not match expected type [java.lang.String (n/a)]; nested exception is java.lang.IllegalArgumentException: Parameter value [1] did not match expected type [java.lang.String (n/a)]
+	at org.springframework.orm.jpa.EntityManagerFactoryUtils.convertJpaAccessExceptionIfPossible(EntityManagerFactoryUtils.java:374)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:235)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:551)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at com.sun.proxy.$Proxy98.existsById(Unknown Source)
+	at com.web.jpa.webjpa.serviceimpl.BookServiceImpl.deleteBookById(BookServiceImpl.java:75)
+	at com.web.jpa.webjpa.controller.BookController.deleteBookById(BookController.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	... 52 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Parameter value [1] did not match expected type [java.lang.String (n/a)]
+	at org.hibernate.query.spi.QueryParameterBindingValidator.validate(QueryParameterBindingValidator.java:54)
+	at org.hibernate.query.spi.QueryParameterBindingValidator.validate(QueryParameterBindingValidator.java:27)
+	at org.hibernate.query.internal.QueryParameterBindingImpl.validate(QueryParameterBindingImpl.java:90)
+	at org.hibernate.query.internal.QueryParameterBindingImpl.setBindValue(QueryParameterBindingImpl.java:55)
+	at org.hibernate.query.internal.AbstractProducedQuery.setParameter(AbstractProducedQuery.java:501)
+	at org.hibernate.query.internal.AbstractProducedQuery.setParameter(AbstractProducedQuery.java:122)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.existsById(SimpleJpaRepository.java:378)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:639)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	... 74 common frames omitted
+02-01-2024 11:44:16.709 [SpringApplicationShutdownHook] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@5c645b43{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+02-01-2024 11:44:16.710 [SpringApplicationShutdownHook] INFO  org.eclipse.jetty.server.session - node0 Stopped scavenging
+02-01-2024 11:44:16.712 [SpringApplicationShutdownHook] INFO  o.e.j.s.h.ContextHandler.application - Destroying Spring FrameworkServlet 'dispatcherServlet'
+02-01-2024 11:44:16.714 [SpringApplicationShutdownHook] INFO  o.e.j.server.handler.ContextHandler - Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@3d5790ea{application,/,[file:///C:/Users/akashc1/AppData/Local/Temp/jetty-docbase.8081.7549699690051069937/],STOPPED}
+02-01-2024 11:44:16.717 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+02-01-2024 11:44:16.718 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+02-01-2024 11:44:16.726 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+02-01-2024 11:44:16.732 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+02-01-2024 11:44:25.928 [main] INFO  c.w.jpa.webjpa.Excercise5Application - Starting Excercise5Application using Java 1.8.0_202 on 18Y2WG3 with PID 23340 (C:\Users\akashc1\Java Projects\Exercise-5\target\classes started by akashc1 in C:\Users\akashc1\Java Projects\Exercise-5)
+02-01-2024 11:44:25.931 [main] INFO  c.w.jpa.webjpa.Excercise5Application - The following 1 profile is active: "dev"
+02-01-2024 11:44:26.752 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+02-01-2024 11:44:26.819 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56 ms. Found 1 JPA repository interfaces.
+02-01-2024 11:44:27.281 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @2622ms to org.eclipse.jetty.util.log.Slf4jLog
+02-01-2024 11:44:27.677 [main] INFO  o.s.b.w.e.j.JettyServletWebServerFactory - Server initialized with port: 8081
+02-01-2024 11:44:27.680 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.45.v20220203; built: 2022-02-03T09:14:34.105Z; git: 4a0c91c0be53805e3fcffdcdcc9587d5301863db; jvm 1.8.0_202-b08
+02-01-2024 11:44:27.712 [main] INFO  o.e.j.s.h.ContextHandler.application - Initializing Spring embedded WebApplicationContext
+02-01-2024 11:44:27.713 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1721 ms
+02-01-2024 11:44:27.762 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+02-01-2024 11:44:27.962 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+02-01-2024 11:44:27.973 [main] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:exercise-5-dev'
+02-01-2024 11:44:28.139 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+02-01-2024 11:44:28.139 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+02-01-2024 11:44:28.140 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+02-01-2024 11:44:28.147 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.s.b.w.e.j.JettyEmbeddedWebAppContext@5e048149{application,/,[file:///C:/Users/akashc1/AppData/Local/Temp/jetty-docbase.8081.8733771555606477555/],AVAILABLE}
+02-01-2024 11:44:28.148 [main] INFO  org.eclipse.jetty.server.Server - Started @3489ms
+02-01-2024 11:44:28.341 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+02-01-2024 11:44:28.410 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.5.Final
+02-01-2024 11:44:28.560 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+02-01-2024 11:44:28.678 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+02-01-2024 11:44:28.876 [main] INFO  o.h.id.enhanced.TableGenerator - HHH000398: Explicit segment value for id generator [hibernate_sequences.sequence_name] suggested; using default [default]
+02-01-2024 11:44:29.312 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+02-01-2024 11:44:29.318 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+02-01-2024 11:44:29.686 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+02-01-2024 11:44:30.150 [main] INFO  o.e.j.s.h.ContextHandler.application - Initializing Spring DispatcherServlet 'dispatcherServlet'
+02-01-2024 11:44:30.150 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+02-01-2024 11:44:30.152 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+02-01-2024 11:44:30.174 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@51827393{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+02-01-2024 11:44:30.175 [main] INFO  o.s.b.w.e.jetty.JettyWebServer - Jetty started on port(s) 8081 (http/1.1) with context path '/'
+02-01-2024 11:44:30.187 [main] INFO  c.w.jpa.webjpa.Excercise5Application - Started Excercise5Application in 4.893 seconds (JVM running for 5.528)
+02-01-2024 11:44:34.450 [qtp731368479-31] INFO  c.w.j.w.controller.BookController - Delete Request comes to controller : api/book/1
+02-01-2024 11:44:34.750 [qtp731368479-31] WARN  c.w.j.w.serviceimpl.BookServiceImpl - No book record Found for Id : 1
+02-01-2024 11:44:34.759 [qtp731368479-31] ERROR c.w.j.w.e.GlobalExceptionHandler - CustomException : CustomExceptionResponseDTO(status=404, message=No book record Found, url=http://localhost:8081/api/book/1)
+02-01-2024 11:44:40.563 [qtp731368479-17] INFO  c.w.j.w.controller.BookController - Get Request comes to the Controller : api/book
+02-01-2024 11:44:40.643 [qtp731368479-17] ERROR c.w.j.w.serviceimpl.BookServiceImpl - No Book Details Found : []
+02-01-2024 11:44:40.644 [qtp731368479-17] ERROR c.w.j.w.e.GlobalExceptionHandler - CustomException : CustomExceptionResponseDTO(status=404, message=No Book Details Found, url=http://localhost:8081/api/book)
+02-01-2024 11:44:44.132 [qtp731368479-20] INFO  c.w.j.w.controller.BookController - Post Request comes to the Controller : api/book - Body Book(id=null, bookId=101, bookName=Java Concepts)
+02-01-2024 11:44:44.245 [qtp731368479-20] INFO  c.w.j.w.serviceimpl.BookServiceImpl - New Book Added : Book(id=1, bookId=101, bookName=Java Concepts)
+02-01-2024 11:44:45.173 [qtp731368479-23] INFO  c.w.j.w.controller.BookController - Post Request comes to the Controller : api/book - Body Book(id=null, bookId=101, bookName=Java Concepts)
+02-01-2024 11:44:45.184 [qtp731368479-23] INFO  c.w.j.w.serviceimpl.BookServiceImpl - New Book Added : Book(id=2, bookId=101, bookName=Java Concepts)
+02-01-2024 11:44:46.004 [qtp731368479-20] INFO  c.w.j.w.controller.BookController - Post Request comes to the Controller : api/book - Body Book(id=null, bookId=101, bookName=Java Concepts)
+02-01-2024 11:44:46.010 [qtp731368479-20] INFO  c.w.j.w.serviceimpl.BookServiceImpl - New Book Added : Book(id=3, bookId=101, bookName=Java Concepts)
+02-01-2024 11:44:46.719 [qtp731368479-23] INFO  c.w.j.w.controller.BookController - Post Request comes to the Controller : api/book - Body Book(id=null, bookId=101, bookName=Java Concepts)
+02-01-2024 11:44:46.725 [qtp731368479-23] INFO  c.w.j.w.serviceimpl.BookServiceImpl - New Book Added : Book(id=4, bookId=101, bookName=Java Concepts)
+02-01-2024 11:44:47.436 [qtp731368479-20] INFO  c.w.j.w.controller.BookController - Post Request comes to the Controller : api/book - Body Book(id=null, bookId=101, bookName=Java Concepts)
+02-01-2024 11:44:47.441 [qtp731368479-20] INFO  c.w.j.w.serviceimpl.BookServiceImpl - New Book Added : Book(id=5, bookId=101, bookName=Java Concepts)
+02-01-2024 11:44:50.918 [qtp731368479-23] INFO  c.w.j.w.controller.BookController - Get Request comes to the Controller : api/book
+02-01-2024 11:44:50.931 [qtp731368479-23] INFO  c.w.j.w.serviceimpl.BookServiceImpl - All Books: [Book(id=1, bookId=101, bookName=Java Concepts), Book(id=2, bookId=101, bookName=Java Concepts), Book(id=3, bookId=101, bookName=Java Concepts), Book(id=4, bookId=101, bookName=Java Concepts), Book(id=5, bookId=101, bookName=Java Concepts)]
+02-01-2024 11:44:56.154 [qtp731368479-20] INFO  c.w.j.w.controller.BookController - Delete Request comes to controller : api/book/1
+02-01-2024 11:44:56.157 [qtp731368479-20] INFO  c.w.j.w.serviceimpl.BookServiceImpl - Book Records for Book Id 1 is Deleted Successfully..
+02-01-2024 11:45:00.958 [qtp731368479-23] INFO  c.w.j.w.controller.BookController - Get Request comes to the Controller : api/book
+02-01-2024 11:45:00.962 [qtp731368479-23] INFO  c.w.j.w.serviceimpl.BookServiceImpl - All Books: [Book(id=2, bookId=101, bookName=Java Concepts), Book(id=3, bookId=101, bookName=Java Concepts), Book(id=4, bookId=101, bookName=Java Concepts), Book(id=5, bookId=101, bookName=Java Concepts)]
+02-01-2024 11:45:05.831 [qtp731368479-20] INFO  c.w.j.w.controller.BookController - Post Request comes to the Controller : api/book - Body Book(id=null, bookId=101, bookName=Java Concepts)
+02-01-2024 11:45:05.835 [qtp731368479-20] INFO  c.w.j.w.serviceimpl.BookServiceImpl - New Book Added : Book(id=6, bookId=101, bookName=Java Concepts)
+02-01-2024 11:45:09.867 [SpringApplicationShutdownHook] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@51827393{HTTP/1.1, (http/1.1)}{0.0.0.0:8081}
+02-01-2024 11:45:09.868 [SpringApplicationShutdownHook] INFO  org.eclipse.jetty.server.session - node0 Stopped scavenging
+02-01-2024 11:45:09.871 [SpringApplicationShutdownHook] INFO  o.e.j.s.h.ContextHandler.application - Destroying Spring FrameworkServlet 'dispatcherServlet'
+02-01-2024 11:45:09.873 [SpringApplicationShutdownHook] INFO  o.e.j.server.handler.ContextHandler - Stopped o.s.b.w.e.j.JettyEmbeddedWebAppContext@5e048149{application,/,[file:///C:/Users/akashc1/AppData/Local/Temp/jetty-docbase.8081.8733771555606477555/],STOPPED}
+02-01-2024 11:45:09.880 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+02-01-2024 11:45:09.882 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl - HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+02-01-2024 11:45:09.893 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+02-01-2024 11:45:09.902 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

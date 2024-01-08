@@ -1,0 +1,10 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:exercise-5-dev
+
+
+default:
+  message: "Currently Active Profile is Dev"
