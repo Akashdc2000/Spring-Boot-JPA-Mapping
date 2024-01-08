@@ -17,5 +17,7 @@ public interface BookService {
 
     ResponseEntity<?> deleteBookById(Long id);
 
-    List<Book> getAllBooksIdLessThan5();
+    List<Book> getAllBooksIdLessThan5(Long id);
+
+    List<Book> getBooksByBookName(String bookName);
 }

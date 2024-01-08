@@ -89,21 +89,32 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public List<Book> getAllBooksIdLessThan5() {
+    public List<Book> getAllBooksIdLessThan5(Long id) {
 
-        String sql = "SELECT * FROM book WHERE id < 5";
-        Query query = entityManager.createNativeQuery(sql, Book.class);
+//        String sql = "SELECT * FROM book WHERE id < 5";
+//        Query query = entityManager.createNativeQuery(sql, Book.class);
+//
+//        List<Book> bookList = query.getResultList();
 
-        List<Book> bookList = query.getResultList();
 
-
-//        List<Book> bookList = bookRepository.getAllBooksWhoseIdLessThan5();
+        List<Book> bookList = bookRepository.getAllBooksWhoseIdLessThan(id);
 
         if(bookList.size() == 0) {
             log.error("No Book Details Found : {}", bookList);
             throw new CustomException(HttpStatus.NOT_FOUND, "No Book Details Found");
         }
         log.info("All Books: {}", bookList);
-        return bookRepository.getAllBooksWhoseIdLessThan5();
+        return bookList;
+    }
+
+    @Override
+    public List<Book> getBooksByBookName(String bookName) {
+        List<Book> bookList = bookRepository.getBooksByBookName(bookName);
+        if(bookList.size() == 0) {
+            log.error("No Book Details Found : {}", bookList);
+            throw new CustomException(HttpStatus.NOT_FOUND, "No Book Details Found");
+        }
+        log.info("All Books: {}", bookList);
+        return bookList;
     }
 }

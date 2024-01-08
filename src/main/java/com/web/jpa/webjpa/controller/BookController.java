@@ -51,8 +51,15 @@ public class BookController {
         return bookService.deleteBookById(id);
     }
 
-    @GetMapping("/book/id-less-than-5")
-    public List<Book> getAllBooksIdLessThan5() {
-        return bookService.getAllBooksIdLessThan5();
+    @GetMapping("/book/id-less-than/{id}")
+    public List<Book> getAllBooksIdLessThan5(@PathVariable Long id) {
+        return bookService.getAllBooksIdLessThan5(id);
     }
+
+    @GetMapping("/book/name/{bookName}")
+    public List<Book> getBooksByBookName(@PathVariable String bookName) {
+        return bookService.getBooksByBookName(bookName);
+    }
+
+
 }
