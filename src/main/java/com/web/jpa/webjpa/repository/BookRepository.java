@@ -22,6 +22,18 @@ public interface BookRepository extends JpaRepository<Book, Long> {
     List<Book> getBooksByBookName(@Param("bookName") String bookName);
 
 
+    //Custom finder methods in JPA
+
+    List<Book> findByBookName(String bookName);
+
+    List<Book> findByBookNameIgnoreCase(String bookName);
+
+    List<Book> findByBookId(String bookId);
+
+
+
+
+
 
 
 

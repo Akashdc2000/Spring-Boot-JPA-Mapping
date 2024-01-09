@@ -7,7 +7,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 import java.util.List;
+import java.util.Random;
 
 @RestController
 @RequestMapping("/api")
@@ -59,6 +62,11 @@ public class BookController {
     @GetMapping("/book/name/{bookName}")
     public List<Book> getBooksByBookName(@PathVariable String bookName) {
         return bookService.getBooksByBookName(bookName);
+    }
+
+    @PostMapping("/validation/test")
+    public Book validationTest(@Valid @RequestBody Book book) {
+        return book;
     }
 
 

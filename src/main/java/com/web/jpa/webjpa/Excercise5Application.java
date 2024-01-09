@@ -44,16 +44,23 @@ public class Excercise5Application implements CommandLineRunner {
 
 
 		saveDummyBookRecords();
+
+		List<Book> bookList = bookRepository.findByBookName("java");
+		System.out.println(bookList);
+		bookList = bookRepository.findByBookNameIgnoreCase("jAvA");
+		System.out.println(bookList);
+		bookList = bookRepository.findByBookId("101");
+		System.out.println(bookList);
 	}
 
 	//Private Methods
 	private void saveDummyBookRecords() {
 
-		Book book1 = new Book("101","Java");
-		Book book2 = new Book("102","C");
-		Book book3 = new Book("103","C++");
-		Book book4 = new Book("104","DS");
-		Book book5 = new Book("105","Python");
+		Book book1 = new Book("101","Java", "book1@gmail.com");
+		Book book2 = new Book("102","C", "book2@gmail.com");
+		Book book3 = new Book("103","C++", "book3@gmail.com");
+		Book book4 = new Book("104","DS", "book4@gmail.com");
+		Book book5 = new Book("105","Python", "book5@gmail.com");
 
 		List<Book> books = new ArrayList<>();
 		books.add(book1);
